@@ -1,0 +1,28 @@
+.main-slider {
+  margin-bottom: 0 !important;
+
+  &__item {
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    button {
+      width: 30px;
+      border-radius: 10px;
+      background-color: rgba(255,255,255,.36);
+    }
+    li.slick-active button {
+      background-color: rgba(255,255,255,1);
+    }
+  }
+
+}

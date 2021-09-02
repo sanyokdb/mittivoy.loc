@@ -1,0 +1,55 @@
+.slick-arrow {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+}
+.slick-prev {
+  left: 0;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4OSIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDg5IDY0IiBpZD0ic3ZnLTEiPgogIDxkZWZzIGlkPSJkZWZzLTIiPgogICAgPHN0eWxlIGlkPSJzdHlsZS0zIj4KCS5jbHMtMSB7IGZpbGwtcnVsZTogZXZlbm9kZDsgfQo8L3N0eWxlPgogIDwvZGVmcz4KICA8cGF0aCBpZD0iYXIxLnN2ZyIgY2xhc3M9ImNscy0xIiBkPSJNMjA4My41MywyNjcuNDQ1bDMwLjAxLTMwLjQzNCwyLjk5LDMuMDI5LTI2LjM2LDI2Ljc0aDgwLjgydjQuMjg0aC04MWwyNi41NCwyNi45MTMtMi45OSwzLjAzMi0zMC4wMS0zMC40MjktMS41My0xLjUxNFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMDgyIC0yMzcpIiBmaWxsPSIjNGY0MzNhIiBmaWxsLW9wYWNpdHk9IjEiIHR5cGU9InNvbGlkQ29sb3IiPjwvcGF0aD4KPC9zdmc+) left 50% top 50% / 28px no-repeat $light-khaki;
+}
+.slick-next {
+  right: 0;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4OS4wNiIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDg5LjA2IDY0IiBpZD0ic3ZnLTEiPgogIDxkZWZzIGlkPSJkZWZzLTIiPgogICAgPHN0eWxlIGlkPSJzdHlsZS0zIj4KCS5jbHMtMSB7IGZpbGwtcnVsZTogZXZlbm9kZDsgfQo8L3N0eWxlPgogIDwvZGVmcz4KICA8cGF0aCBpZD0iYXIyLnN2ZyIgY2xhc3M9ImNscy0xIiBkPSJNMjE2OS41LDE4OS40NzdsLTMwLjAzLTMwLjQzNC0yLjk5LDMuMDI4LDI2LjM4LDI2Ljc0aC04MC44OFYxOTMuMWg4MS4wNmwtMjYuNTYsMjYuOTEzLDIuOTksMy4wMzMsMzAuMDMtMzAuNDMsMS41My0xLjUxNFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMDgxLjk3IC0xNTkuMDMxKSIgZmlsbD0iIzRmNDMzYSIgZmlsbC1vcGFjaXR5PSIxIiB0eXBlPSJzb2xpZENvbG9yIj48L3BhdGg+Cjwvc3ZnPg==) left 50% top 50% / 28px no-repeat $light-khaki;
+}
+/* Dots */
+.slick-dotted.slick-slider { margin-bottom: 30px; }
+.slick-dots {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  padding: 12px 0;
+
+  list-style-type: none;
+
+  li {
+    margin: 0 0.25rem;
+  }
+
+  button {
+    display: block;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+
+    border: none;
+    border-radius: 100%;
+    background-color: rgba(0,0,0,.26);
+
+    text-indent: -9999px;
+
+    cursor: pointer;
+  }
+
+  li.slick-active button {
+    background-color: $accent;
+  }
+}

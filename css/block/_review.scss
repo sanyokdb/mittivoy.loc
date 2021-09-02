@@ -1,0 +1,89 @@
+.review {
+  background: 
+    url(../image/volna-bottom.png) left calc(50% - 0px) bottom 0px / auto auto no-repeat,
+    url(../image/volna-top.png) left 50% top 0px / auto auto no-repeat $accent;
+  color: $white;
+
+  &__inner {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 110px;
+    min-height: 400px;
+
+    display: flex;
+    justify-content: center;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 194px;
+      height: 268px;
+      background-image: url(../image/review__img.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      bottom: 30px;
+      left: 0;
+    }
+    &::after {
+      transform: scaleX(-1);
+      left: auto;
+      right: 0;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    width: 60%;
+  }
+
+  &__title {
+    text-align: center;
+    color: $white;
+    &::after {
+      background-image: url(../image/title-white.png);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+}
+
+.review-slider {
+  .slick-list {
+    margin-right: -25px;
+    margin-left: -25px;
+  }
+  .slick-slide {
+    padding: 15px 25px 25px;
+  }
+  .slick-arrow {
+    top: auto;
+    bottom: -25px;
+  }
+  .slick-dots {
+    button {
+      background-color: rgba(255,255,255,0.36);
+    }
+    li.slick-active button {
+      background-color: rgba(255,255,255,1);
+    }
+  }
+}
+
+.review-thumb {
+  display: flex;
+
+  &__img {
+    width: 120px;
+    height: 120px;
+    margin-right: 30px;
+    flex-shrink: 0;
+  }
+
+  &__name {
+    font-family: $font-family-roboto;
+    margin: 10px 0;
+  }
+}

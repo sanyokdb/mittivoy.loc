@@ -1,0 +1,42 @@
+.about {
+  padding-top: 80px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__btn {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  &__image {
+    width: 500px;
+    height: 300px;
+    margin-left: 80px;
+    position: relative;
+    flex-shrink: 0;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      width: 249px;
+      height: 369px;
+      top: -85px;
+      left: -160px;
+      background-image: url(../image/sm-1.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+}

@@ -1,0 +1,133 @@
+$text-color: #42444c;
+$white: #ffffff;
+$pink: #fd0276;
+$accent: #00b8e8;
+$light-khaki: #f2fb87;
+
+$font-family-nunito: "Nunito", sans-serif;
+$font-family-roboto: "Roboto Slab", serif;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  font-family: $font-family-nunito;
+  color: $text-color;
+  background-color: #fff;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  transition: all 250ms ease;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+p {
+  margin-top: 0;
+}
+
+.wrapper {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 320px;
+  // height: 100%;
+  background-image: url(../image/bg.png);
+  background-repeat: no-repeat;
+  background-position: left calc(57px + 50%) top -32px;
+  background-size: 110% auto;
+  background-attachment: scroll;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.title {
+  font-family: $font-family-roboto;
+  font-size: 30px;
+  font-weight: 800;
+  position: relative;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+  line-height: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 61px;
+    height: 13px;
+    background-image: url(../image/title-blue.png);
+    background-repeat: no-repeat;
+  }
+
+  &-white {
+    color: $white;
+    &::after {
+      background-image: url(../image/title-white.png);
+    }
+  }
+
+  &-center {
+    text-align: center;
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  // border: 1px solid #dee2e6;
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: 0 13px 14px rgba(0, 0, 0, 0.26);
+  img {
+    max-width: 100%;
+    border-radius: 30px;
+  }
+}
+
+@import "block/btn";
+@import "block/slick-theme";
+@import "block/header";
+@import "block/main-slider";
+@import "block/about";
+@import "block/review";
+@import "block/ourstore";
+@import "block/footer";
+@import "block/scrollup";
+
+@import "media";

@@ -1,0 +1,11 @@
+.scrollup {
+  width: 44px;
+  height: 44px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4OS4wNiIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDg5LjA2IDY0IiBpZD0ic3ZnLTEiPgogIDxkZWZzIGlkPSJkZWZzLTIiPgogICAgPHN0eWxlIGlkPSJzdHlsZS0zIj4KCS5jbHMtMSB7IGZpbGwtcnVsZTogZXZlbm9kZDsgfQo8L3N0eWxlPgogIDwvZGVmcz4KICA8cGF0aCBpZD0iYXIyLnN2ZyIgY2xhc3M9ImNscy0xIiBkPSJNMjE2OS41LDE4OS40NzdsLTMwLjAzLTMwLjQzNC0yLjk5LDMuMDI4LDI2LjM4LDI2Ljc0aC04MC44OFYxOTMuMWg4MS4wNmwtMjYuNTYsMjYuOTEzLDIuOTksMy4wMzMsMzAuMDMtMzAuNDMsMS41My0xLjUxNFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMDgxLjk3IC0xNTkuMDMxKSIgZmlsbD0iIzRmNDMzYSIgZmlsbC1vcGFjaXR5PSIxIiB0eXBlPSJzb2xpZENvbG9yIj48L3BhdGg+Cjwvc3ZnPg==) left 50% top 50%/28px no-repeat $light-khaki;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  cursor: pointer;
+  transform: translateX(-50%) rotate(-90deg);
+}

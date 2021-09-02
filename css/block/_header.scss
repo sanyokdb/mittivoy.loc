@@ -1,0 +1,28 @@
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  }
+
+  &__text {
+    font-family: $font-family-roboto;
+    font-size: 34px;
+    line-height: 1;
+    font-weight: 600;
+    color: $pink;
+  }
+
+  &__social {
+    display: flex;
+  }
+
+  &__social-link {
+    margin: 2px;
+    transition: all 250ms ease;
+    &:hover {
+      transform: translate(0px, -2px);
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.footer {
+  padding-top: 120px;
+  padding-bottom: 40px;
+  position: relative;
+
+  background: 
+    url(../image/volna-top.png) left 50% top 0px / auto auto no-repeat,
+    url(../image/bg.png) left 50% top 77% / 110% auto no-repeat $accent;
+
+  // background-color: $accent;
+  // background-image: url(../image/bg.png);
+  // background-repeat: no-repeat;
+  // background-position: left calc(57px + 50%) top 0px;
+  // background-size: 110% auto;
+  // background-attachment: scroll;
+
+  &__copyright {
+    text-align: center;
+    color: $white;
+  }
+}
